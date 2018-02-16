@@ -175,6 +175,6 @@ library(lattice)
 
 my.palette <- c("#FFF5F0", "#FEE0D2", "#FEE0D2", "#FCBBA1", "#FCBBA1", "#FC9272", "#FC9272", "#FB6A4A", "#FB6A4A", "#EF3B2C", "#EF3B2C", "#CB181D", "#CB181D", "#A50F15", "#A50F15", "#67000D")
 
-levelplot(-trace$X7 ~ trace$X2 * trace$X3, xlab="k value", ylab="s value", zlab="IC", screen = list(z = -30, x=-60), regions=TRUE, cuts=15, col.regions=my.palette)
+levelplot(-trace$X7 ~ trace$X1 * trace$X2, xlab="k value", ylab="s value", zlab="IC", screen = list(z = -30, x=-60), regions=TRUE, cuts=15, col.regions=my.palette)
 
-wireframe(-trace$X7 ~ trace$X2 * trace$X3, xlab="k value", ylab="s value", zlab="IC", screen = list(z = -30, x=-60), drape=TRUE, cuts=15, col.regions=my.palette)
+wireframe(-trace$X7 ~ trace$X1 * trace$X2, xlab="k value", ylab="s value", zlab="IC", screen = list(z = -30, x=-60), drape=TRUE, cuts=15, col.regions=my.palette)
